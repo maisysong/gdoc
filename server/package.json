@@ -14,5 +14,8 @@
   "dependencies": {
     "mongoose": "^7.5.2",
     "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
