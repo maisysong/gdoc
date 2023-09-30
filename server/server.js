@@ -8,7 +8,7 @@ mongoose.connect('mongodb+srv://ms0909:yODkdmPtQsvW2ZGn@cluster0.k7nhhbh.mongodb
 
 const io = require('socket.io')(3001, {
     cors: {
-        origin: ['http://localhost:3000', 'https://gdoc-one.vercel.app'],
+        origin: ['http://localhost:3000', 'https://gdoc-x8ir.onrender.com'],
         methods: ['GET', 'POST']
     }
 })
