@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Document = require('./Document')
 
-mongoose.connect('mongodb://localhost/google-docs-clone')
+mongoose.connect(process.env.MONGODB_CONNECT_URI)
 
 const io = require('socket.io')(3001, {
     cors: {
