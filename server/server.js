@@ -2,12 +2,13 @@ const mongoose = require('mongoose')
 const Document = require('./Document')
 
 // mongoose.connect(process.env.MONGODB_CONNECT_URI)
+// mongodb
 mongoose.connect('mongodb+srv://ms0909:yODkdmPtQsvW2ZGn@cluster0.k7nhhbh.mongodb.net/?retryWrites=true&w=majority')
 
 
 const io = require('socket.io')(3001, {
     cors: {
-        origin: 'http://localhost:3000',
+        origin: ['http://localhost:3000', 'https://gdoc-one.vercel.app'],
         methods: ['GET', 'POST']
     }
 })
