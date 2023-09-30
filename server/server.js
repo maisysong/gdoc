@@ -28,7 +28,7 @@ io.on("connection", socket => {
             })
             
         } catch (error) {
-            console.log(error)
+            console.error(error)
         }
     })
 })
@@ -41,6 +41,6 @@ async function findOrCreateDocument(id) {
     
         return await Document.create({ _id: id, data: defaultValue })
     } catch (error) {
-        console.log(error)
+        console.error(error)
     }
 }
