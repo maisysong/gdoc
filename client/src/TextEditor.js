@@ -24,7 +24,8 @@ function TextEditor() {
 
   useEffect(() => {
     // const s = io("http://localhost:3001")
-    const s = io("https://gdoc-x8ir.onrender.com")
+    // const s = io("https://gdoc-x8ir.onrender.com")
+    const s = io("https://gdoc-server.onrender.com")
     setSocket(s)
 
     return () => {
